@@ -27,11 +27,18 @@ import numpy as np
 다음 커맨드로 새팅을 확인하자.
 `apt --installed list` 
 
+
+
+
 ***
 
 
-1. (기본 작업) 우분투 버전 확인
+
+
+1. (기본 작업) 우분투 버전 확인  
 `$ cat /etc/issue`  
+
+
 `Ubuntu 16.04.5 LTS \n \l`    
 
 2. CUDA,CUDNN 설치 - GPU 확인 
@@ -51,8 +58,8 @@ https://developer.nvidia.com/cuda-gpus
 
 이제 다음과 같은 환경이 만들어 졌다.  
 `CUDA 10  
-CUDNN 7
-python3'  
+CUDNN 7  
+python3`  
 
 
 3. python packages(PIL,numpy,scipy,tensorflow-gpu...)
