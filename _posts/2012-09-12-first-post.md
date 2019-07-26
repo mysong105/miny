@@ -27,22 +27,24 @@ import numpy as np
 다음 커맨드로 새팅을 확인하자.
 `apt --installed list` 
 
+***
 
-1) (기본 작업) 우분투 버전 확인
+
+#### (기본 작업) 우분투 버전 확인
 `$ cat /etc/issue`  
 `Ubuntu 16.04.5 LTS \n \l`    
 
-2) CUDA,CUDNN 설치 - GPU 확인 
+#### CUDA,CUDNN 설치 - GPU 확인 
 
 
 `$ nvidia-smi`
-![nvidia-smi 결과]('./_posts/1.jpg)
+![nvidia-smi 결과](1.jpg)
 
 
 
 GPU종류에 따라 compute capability 를 확인하여 CUDA를 설치해야한다. ($sudo)  
 https://developer.nvidia.com/cuda-gpus  
-![버전]('./_posts/2.jpg)
+![버전](2.jpg)
 
 
 
@@ -53,7 +55,7 @@ CUDNN 7
 python3'  
 
 
-2) python packages(PIL,numpy,scipy,tensorflow-gpu...)
+#### python packages(PIL,numpy,scipy,tensorflow-gpu...)
 pip 이라는 설치 도구로 편리하게 install 가능하나,  
 버전 문제 해결을 간편하게 하기 위해 venv 로 가상 환경을 설정 후 설치 하자  
 이 때, tensorflow가 아닌 tensorflow-gpu를 설치 해야 한다는 것을 기억하자.
